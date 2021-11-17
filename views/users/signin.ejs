@@ -1,0 +1,29 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="container-md my-5">
+    <div class="row">
+        <div class="col-12 col-md-6 offset-md-3" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="card shadow">
+                <img src="https://res.cloudinary.com/mythmatician/image/upload/v1636704129/YelpCamp/rishabh-pandoh-m1PFxGQ-5x0-unsplash_hkttxs.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <h3 class="card-title">Sign In</h3>
+                    <form action="/signin" method="POST" novalidate class="validate-form">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username:</label>
+                            <input type="text" id="username" name="username" class="form-control" required autofocus>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password:</label>
+                            <input type="password" id="password" name="password" class="form-control" required>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+                        <div class="mb-3 d-grid">
+                            <button class="btn btn-primary" type="button submit">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

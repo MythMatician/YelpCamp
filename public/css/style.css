@@ -1,0 +1,48 @@
+body {
+    position: relative;
+    background-image: url('https://res.cloudinary.com/mythmatician/image/upload/v1637133673/YelpCamp/carolina-chavez-gamarra-kjdHsEZq5vo-unsplash_cjvr3y.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw;
+    height: 100%;
+    z-index: 1;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #333;
+    z-index: -1;
+}
+
+#home-content {
+    min-height: 92.3vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-content > * {
+    width: 50%;
+}
+
+@media(max-width:450px) {
+    #home-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #home-content > * {
+        width: 100%;
+    }
+}

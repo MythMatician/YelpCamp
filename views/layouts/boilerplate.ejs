@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/stylesheet/starability.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js'></script>
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="/js/bootstrap.min.js"></script>
+    <script defer src="/js/script.js"></script>
+    <title>YelpCamp | Welcome to YelpCamp!</title>
+</head>
+
+<body>
+    
+    <%- include('../partials/navbar') %> 
+
+    <main class="container-md d-flex flex-column min-vh-100">
+        <%- include('../partials/successFlash') %> 
+        <%- include('../partials/errorFlash') %> 
+
+        <%- body %> 
+
+    </main>
+
+    <%- include('../partials/footer') %> 
+    
+</body>
+</html>

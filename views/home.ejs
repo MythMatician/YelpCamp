@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="/js/bootstrap.min.js"></script>
+    <script defer src="/js/script.js"></script>
+    <title>YelpCamp | Welcome to YelpCamp!</title>
+</head>
+<body>
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-md-transparent py-3">
+        <div class="container-md">
+          <a class="navbar-brand" href="/">YelpCamp</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <div class="navbar-nav">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/campgrounds">Campgrounds</a>
+                <a class="nav-link" href="/campgrounds/new">New Campground</a>
+            </div>
+            <div class="navbar-nav">
+              <% if(!currentUser) {%> 
+                <a class="nav-link" href="/signin">Sign In</a>
+                <a class="nav-link" href="/signup">Sign Up</a>
+              <% } else { %> 
+                <a class="nav-link" href="/signout">Sign Out</a>
+              <% } %> 
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div id="home-content" class="container-md">
+        <div class="text-light" data-aos="fade-left" data-aos-duration="1000">
+            <h1 class="display-2 mb-4">Welcome to Yelpcamp Home!</h1>
+            <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt doloremque minima dolores cumque ex. Fugit non ipsa corporis vero laudantium?</p>
+            <a class="btn btn-outline-light btn-lg" href="/campgrounds">All Campgrounds</a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+    
+
+ 
